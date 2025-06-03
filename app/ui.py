@@ -1,15 +1,16 @@
 import tkinter as tk
 from tkinter import messagebox, Scrollbar
 from app.core import JogoAdivinhacao
+from app.config import Config
 
 
 class JogoUI:
     def __init__(self, root):
-        self.jogo = JogoAdivinhacao(1, 1000000, 20)
+        self.jogo = JogoAdivinhacao(Config.NUMERO_MINIMO, Config.NUMERO_MAXIMO, Config.MAXIMO_DE_TENTATIVAS)
 
         self.root = root
         self.root.title("🎯 Adivinhe o Número")
-        self.root.geometry("450x475")
+        self.root.geometry(Config.DIMENSAO_DA_TELA)
         self.root.resizable(False, False)
 
         self.criar_widgets()
