@@ -12,4 +12,4 @@ Ao escolher um número, o sistema informa se este número é muito alto, muito b
 O jogo termina quando o usuário acertar o número secreto ou quando ultrapassar o número máximo de tentativas, o que eu não sei qual é, pois vivo mudando. Sim, o jogo é meu então eu mudo as regras quando eu quiser, a não ser que você me pague.
 
 ## COMO CONTRIBUIR
-Macho... sinseramente... só clona o projeto (fork é para amadores), cria uma branch chamada feature/um_nome_bem_intuitivo faz o PR e confia que eu vou analizar e aceitar. Provavelmente irei aceitar, mas a parte da análize vai depender do humor do Luiz do futuro.
+Macho... sinseramente... só clona o projeto (se não for colabarador, faz o fork aí...), cria uma branch chamada feature/um_nome_bem_intuitivo faz o PR e confia que eu vou analizar e aceitar. Provavelmente irei aceitar, mas a parte da análize vai depender do humor do Luiz do futuro.
