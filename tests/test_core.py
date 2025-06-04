@@ -53,6 +53,19 @@ def test_muitas_tentativas_restantes(jogo):
     assert jogo.tentativas == 1
     assert tentativas_restantes == 4
 
+def test_tentativas_dentro_do_limite(jogo):
+    jogo.numero_secreto = 5
+    jogo.verificar_palpite(1)
+    jogo.verificar_palpite(2)
+
+    tentativas = jogo.tentativas
+    tentativas_restantes = jogo.tentativas_restantes()
+    acabou = jogo.jogo_acabou()
+
+    assert tentativas == 2
+    assert tentativas_restantes == 3
+    assert acabou == False
+
 def test_perder_por_maximo_de_tentativas(jogo):
     jogo.numero_secreto = 5
     jogo.verificar_palpite(1)
